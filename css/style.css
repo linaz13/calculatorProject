@@ -1,0 +1,142 @@
+/*Universal selector*/
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    font-size: large;  
+}
+
+/*Element selector*/
+button{
+    padding: 16px;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*Class selector*/
+.numbers{
+  background-color: rgb(0, 81, 255); 
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.operators{
+    background-color: lightgrey; 
+    border: 2px solid darkgray;
+    border-radius: 8px;    
+}
+
+/*Id selector*/
+#arrow{
+    background-color: white;
+    border: 2px solid  rgb(0, 81, 255);
+    color: rgb(0, 81, 255);
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+#result{
+    font-style: oblique;
+    font-size: 30px;
+    color: rgb(0, 81, 255);
+}
+
+/*Attribute selector*/
+button[value="="]{
+    background-color: whitesmoke;
+    color: red;
+    border: 2px solid  red;
+    border-radius: 12px;
+    font-size: 20px;  
+}
+
+/*Grouping selector*/
+h1, strong{
+    font-style: oblique;
+    font-size: 24px;
+}
+
+/*Descendant selector*/
+main button{
+    border-radius: 12px;
+}
+/*Child selector*/
+section > strong{
+    color: darkblue;
+}
+
+/*Adjancent sibling*/
+header + main{
+    border: 2px solid gray;
+    width: 380px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+/*General sibling*/
+/*preguntar por que no funciona*/
+button[value="C/E"]~button[value="C"]{
+    color: darkblue;
+    border-color: darkblue;
+}
+
+button[value="C"]~button[value="C/E"]{
+    color: darkblue;
+    border-color: darkblue;
+}
+
+
+/*Pseudo-element selector*/
+h1::first-letter{
+    color: rgb(0, 81, 255);
+    font-style: italic;
+    font-size: xx-large;
+}
+
+/*Pseudo-class*/
+.numbers:hover{
+    background-color: white;
+    color:  rgb(0, 81, 255);
+    border: 2px solid  rgb(0, 81, 255);
+}
+
+#arrow:hover{
+    background-color: rgb(0, 81, 255);
+    color: white;
+}
+
+button[value="="]:hover{
+    background-color: red;
+    color: white;
+}
+
+.operators:hover{
+    background-color: white;
+    color: darkgray;
+    border: 2px solid  darkgrey;
+}
+
+.signDot:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid red; 
+}
+
+.clear:hover{
+    background-color: lightblue;
+    color: darkblue;
+    border: 2px solid black;    
+}
+/*
+#dot, #sign:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+}
+*/
+
+
+
